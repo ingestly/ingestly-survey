@@ -1,4 +1,4 @@
-# Ingestly Survey
+# Ingestly Survey (English)
 
 
 ## Setup
@@ -22,7 +22,7 @@ This mechanism is not good at security so do not send PII or any sensitive infor
 This library is forked from [Atlas Quick Survey](https://github.com/Nikkei/atlas-tracking-js/blob/master/plugins/QuickSurvey/aqs.js) under [Atlas Tracking JS](https://github.com/Nikkei/atlas-tracking-js/). Thank you Nikkei for publishing the code under MIT license.
 
 
-# Ingestly Survey
+# Ingestly Survey (日本語)
 
 ## セットアップ
 1. Ingestlyの導入が完了していること。
@@ -37,7 +37,7 @@ document.getElementById('form_button').addEventListener('click', function(){
 </script>
 ```
 
-Ingestly Survey はフォームの値を `trackAction` メソッドを呼び出すことで送信しています。データはBigQueryのカラム `custom_attr` で利用可能です。
+Ingestly Survey はフォームの値を `trackAction` メソッドを呼び出すことでIngestlyに送信しています。データはBigQueryのカラム `custom_attr` で利用可能です。
 この仕組みはセキュリティ的には優れていないため、個人情報やセンシティブな情報をこのコードで送信しないでください。
 
 
