@@ -1,4 +1,4 @@
-# Ingestly Survey Demo
+# Ingestly Survey
 
 
 ## Setup
@@ -22,7 +22,7 @@ This mechanism is not good at security so do not send PII or any sensitive infor
 This library is forked from [Atlas Quick Survey](https://github.com/Nikkei/atlas-tracking-js/blob/master/plugins/QuickSurvey/aqs.js) under [Atlas Tracking JS](https://github.com/Nikkei/atlas-tracking-js/). Thank you Nikkei for publishing the code under MIT license.
 
 
-# Ingestly Survey デモ
+# Ingestly Survey
 
 ## セットアップ
 1. Ingestlyの導入が完了していること。
