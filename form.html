@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Page</title>
+</head>
+<body style="margin: 0; padding: 0;">
+<div style="width: 840px; margin: 40px 50px; padding: 0;">
+    <header id="header"  style="width: 100%; margin: 0; padding: 0;">
+        <div style="float: left; height: 100px; width: 100%">
+            <h1 id="title">Form Page</h1>
+        </div>
+    </header>
+    <div id="body" style="margin-left: auto; margin-right: auto; clear: both; width: 100%">
+        <div id="menu"  style="float: left; width: 20%">
+            <ul>
+                <li><a href="">Menu item</a></li>
+            </ul>
+        </div>
+        <div id="content" style="float: right; width: 80%">
+            <form name="form1" id="simple_form">
+              <table>
+                <tr><th>Text</th><td><input type="text" name="form_text" placeholder="some text" /></td></tr>
+                <tr><th>Checkbox</th><td><input type="checkbox" name="form_checkbox" value="checkbox" /> Check here</td></tr>
+                <tr><th>Radio Button</th><td><input type="radio" name="form_radio" value="A" /><input type="radio" name="form_radio" value="B" /></td></tr>
+                <tr><th>Select</th><td>
+                  <select name="form_select">
+                    <option value="s1">S1</option>
+                    <option value="s2">S2</option>
+                    <option value="s3">S3</option>
+                    <option value="s4">S4</option>
+                  </select>
+                </td></tr>
+              <tr><th>Textarea</th><td><textarea name="form_textarea" placeholder="paragraphs"></textarea></td></tr>
+              <tr><th></th><td><input type="button" name="form_button" id="form_button" value="submit" /></td></tr>
+              </table>
+            </form>
+        </div>
+    </div>
+    <footer id="footer" style="clear: both;">
+        <p>Copyright</p>
+    </footer>
+</div>
+<!-- For Demo only -->
+<script src="ingestly_dummy.js"></script>
+
+<!-- Ingestly Survey Library -->
+<script src="ingestly-survey.js"></script>
+
+<!-- Add Event Listener to the submit button -->
+<script>
+document.getElementById('form_button').addEventListener('click', function(){
+  ingestlySurvey.submitResult('hoge', document.getElementById('simple_form'));
+}, false);
+</script>
+
+</body>
+</html>
