@@ -47,6 +47,6 @@ var ingestlySurvey = {
     },
     submitResult: function (name, elm) {
         var result = this.buildResult(name, elm);
-        ingestly.trackAction('answer', 'survey', result);
+        Ingestly.trackAction('answer', 'survey', result);
     }
 };
