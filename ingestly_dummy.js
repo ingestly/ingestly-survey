@@ -1,4 +1,4 @@
-var ingestly = {
+var Ingestly = {
   trackAction: function(action, category, context){
     context.action = action;
     context.category = category;
