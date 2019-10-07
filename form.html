@@ -36,9 +36,6 @@
             </form>
         </div>
     </div>
-    <footer id="footer" style="clear: both;">
-        <p>Copyright</p>
-    </footer>
 </div>
 <!-- For Demo only -->
 <script src="ingestly_dummy.js"></script>
@@ -49,7 +46,13 @@
 <!-- Add Event Listener to the submit button -->
 <script>
 document.getElementById('form_button').addEventListener('click', function(){
+
+  // Send the result to Ingestly
   ingestlySurvey.submitResult('hoge', document.getElementById('simple_form'));
+
+  // Diactivate the form
+  document.getElementById('simple_form').innerHTML = '<p style="font-weight: bold; color: #04cc04">Thank you!</p>';
+
 }, false);
 </script>
 

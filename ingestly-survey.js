@@ -47,8 +47,6 @@ var ingestlySurvey = {
     },
     submitResult: function (name, elm) {
         var result = this.buildResult(name, elm);
-        ingestly.trackAction('answer', 'survey', {
-            custom_attr: result
-        });
+        ingestly.trackAction('answer', 'survey', result);
     }
 };
